@@ -1,0 +1,17 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      datasource:
+        master:
+          username: cln_db
+          password: Cln2020!
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url:  jdbc:mysql://10.20.204.130:3306/g_platform?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+        coloan:
+          username: coloan_phase3
+          password: coloan_phase3
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+          url: jdbc:oracle:thin:@10.20.201.173:1521:rtl15ddb

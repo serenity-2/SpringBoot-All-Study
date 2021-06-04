@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      datasource:
+        master:
+          username: cln_db
+          password: Cln2020!
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://10.20.204.130:3306/g_platform?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+        coloan:
+          username: coloan_phase3
+          password: coloan_phase3
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+          url: jdbc:oracle:thin:@10.20.201.173:1521:rtl15ddb
+  redis:
+    host: 10.20.123.10
+    port: 30829
+    database: 1
+    password: Redis1!
+    jedis:
+      pool:
+        max-active: 8  #连接池最大连接数（使用负值表示没有限制）
+        max-wait: -1   #连接池最大阻塞等待时间（使用负值表示没有限制）
+        min-idle: 0    #连接线最小空闲连接数
+    timeout: 5000  #连接超时时间
