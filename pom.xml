@@ -10,15 +10,17 @@
     </parent>
     <groupId>com.jzjr</groupId>
     <artifactId>SpringBoot-All-Study</artifactId>
-    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringBoot-All-Study</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
 
     <modules>
         <module>mybatis-operating</module>
         <module>reids-operation</module>
         <module>async-operation</module>
+        <module>serializable-operation</module>
+        <module>mapstruct-operation</module>
     </modules>
 
     <properties>
@@ -81,6 +83,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.73</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

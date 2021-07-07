@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jzjr.mybatisoperating.entity.ConfProperties;
+import com.jzjr.mybatisoperating.entity.SysUser;
+import com.jzjr.mybatisoperating.entity.User;
 import com.jzjr.mybatisoperating.mapper.ConfigPropertiesMapper;
 import com.jzjr.mybatisoperating.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
@@ -50,9 +52,9 @@ class MybatisOperatingApplicationTests {
 
     @Test
     public void fenyeIPage(){
-        QueryWrapper<ConfProperties> queryWrapper = new QueryWrapper<>();
-        IPage<ConfProperties> page = new Page<ConfProperties>(1, 10);
-        IPage<ConfProperties> iPage = this.configPropertiesMapper.selectPage(page,queryWrapper);
+        QueryWrapper<SysUser> queryWrapper = new QueryWrapper<>();
+        IPage<SysUser> page = new Page<SysUser>(1, 5);
+        IPage<SysUser> iPage = this.userMapper.selectPage(page,queryWrapper);
         //当前页
         System.out.println(iPage.getCurrent());
         //每页大小

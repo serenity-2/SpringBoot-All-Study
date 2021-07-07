@@ -16,7 +16,7 @@ spring:
           driver-class-name: oracle.jdbc.driver.OracleDriver
           url: jdbc:oracle:thin:@10.20.201.173:1521:rtl15ddb
   redis:
-    host: 10.20.123.10
+    host: 10.20.xxx.xx
     port: 30829
     database: 1
     password: Redis1!
