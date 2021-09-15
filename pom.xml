@@ -21,6 +21,9 @@
         <module>async-operation</module>
         <module>serializable-operation</module>
         <module>mapstruct-operation</module>
+        <module>spring-validation</module>
+        <module>swagger-operation</module>
+        <module>response_result-operation</module>
     </modules>
 
     <properties>
