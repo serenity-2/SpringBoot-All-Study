@@ -10,7 +10,7 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 
 
-@Mapper
+//@Mapper
 public interface PersonConverter {
     PersonConverter INSTANCE = Mappers.getMapper(PersonConverter.class);
     @Mappings({

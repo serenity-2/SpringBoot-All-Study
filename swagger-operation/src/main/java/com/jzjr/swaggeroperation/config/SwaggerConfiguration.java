@@ -21,7 +21,7 @@ public class SwaggerConfiguration {
                 .apiInfo(this.apiInfo())
                 .select()
                 //扫描controller包下的路径获取api接口
-                .apis(RequestHandlerSelectors.basePackage("com.jzjr.swaggeroperation.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.jzjr.swaggeroperatio.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
